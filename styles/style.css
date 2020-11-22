@@ -223,6 +223,7 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
+  text-align: center;
   color: white;
   z-index: 2 
 }
@@ -232,6 +233,7 @@
   line-height: 34px;
   width: 60%;
   font-size: 24px;
+  text-align: center;
   font-weight: normal;
   color: white;
 }
@@ -240,17 +242,24 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
+  align-content: stretch;
+  align-items: stretch;
   list-style: none;
+  margin-left: auto;
+  margin-left: auto;
   z-index: 2
 }
+.break {
+  display: block;
+  height: 80px;
+  width: 100%;
+}
 .kaufman__table_cell_theme_dark {
+  display: block;
+  flex: 1 1 auto;
   list-style: none;
-  left: auto;
-  right: auto;
   width: 200px;
+  padding: 0;
 }
 .kaufman__table_cell_heading_theme_dark {
   position: relative;
@@ -268,7 +277,7 @@
   font-size: 18px;
   font-weight: normal;
   z-index: 2;
-  max-width: 200px;
+  width: 200px;
   display: block;
   list-style: none;
 }
@@ -285,29 +294,31 @@
   position: relative;
   background-color: #1f1f1f;
 }
-.footer__column {
-  width: 90%;
+.footer__columns {
   display: flex;
   flex-direction: row;
   flex-basis: 711px;
   justify-content: center;
   margin-bottom: 40px;
 }
+.footer__column {
+
+}
 .footer__column_copyright {
   margin: 0;
-  position: flex;
+  position: relative;
   flex-basis: 711px;
   flex-direction: column;
   color: white;
   justify-content: space-between;
-  flex-grow: 1;
+  flex-grow: 0;
 }
-.footer__column_logo {
+.footer__columns_logo {
   align-items: flex-start;
   width: 183px;
   height: 35px;
 }
-.footer__column_author {
+.footer__columns_author {
   position: flex;
   margin: 18px 0;
   bottom: 0;
@@ -318,15 +329,15 @@
 .footer__column_info {
   margin: 0px;
   flex-direction: column;
-  flex-shrink: 1;
+  flex-shrink: 0;
 }
-.footer__column_heading {
+.footer__columns_heading {
   color: white;
   line-height: 45px;
   font-size: 18px;
   font-weight: bold;
 }
-.footer__column_info_links { 
+.footer__columns_info_links { 
   line-height: 30px;
   font-size: 18px;
   list-style: none;
@@ -334,9 +345,9 @@
 .footer__column_social {
   margin: 0;
   flex-direction: column;
-  flex-shrink: 1;
+  flex-grow: 1;
 }
-.footer__column_social_links {
+.footer__columns_social_links {
   list-style: none;
 }
 .footer__link {
