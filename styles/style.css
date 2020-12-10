@@ -291,7 +291,7 @@
   width: 90%;
   margin: 0px auto;
   justify-content: space-between;
-  flex-grow: default;
+  flex-grow: 0;
 }
 .footer__column {
   flex-direction: column;
