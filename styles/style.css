@@ -68,6 +68,18 @@
   top: 64px;
   position: absolute;
   z-index: 1;
+  transform: rotate(-15deg);
+}
+.rotate {
+  animation: rotation 20s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .description {
   display: flex;
@@ -114,6 +126,132 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
+}
+.techniques {
+  padding-top: 100px;
+  align-items: center;
+}
+.cards {
+  max-width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin: 0px auto;
+  list-style: none;
+}
+.cards__item {
+  margin-top: 60px;
+  margin-right: 100px;
+  text-align: center;
+  width: 240px;
+}
+.cards__item:nth-of-type(3n) {
+  margin-right: 0px;
+}
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  align-items: center;
+}
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 43px;
+  margin-bottom: 0px;
+}
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+.video {
+  padding-top: 100px;
+}
+.video__iframes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0 auto;
+}
+.video__iframe {
+  width: 515px;
+  height: 316px;
+}
+.video__iframe:last-of-type {
+  margin-left: 20px;
+}
+.oakley {
+  padding-top: 160px;
+  padding-bottom: 80px;
+  background-color: #f2f2f2;
+}
+.khan {
+  margin: 0;
+  padding-top: 105px;
+}
+.khan__container {
+  width: 80%;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  
+}
+.khan__author {
+  margin: 0;
+  padding: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.khan__title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.khan__quote {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 790px;
+}
+.khan__quote-author {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 68px;
+}
+.khan__book-container {
+  width: 620px;
+  height: 608px;
+}
+.khan__book-pic {
+  width: 620px;
+}
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
 }
 .digits {
   align-items: center;
@@ -276,6 +414,23 @@
   z-index: 0;
   background-image: url('../images/kaufman-triangle.svg');
   background-size: cover;
+}
+.resources {
+  margin-top: 100px;
+}
+.resources__logo-zone {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 217px;
+  padding-top: 80px;
+  width: 1100px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.resources__logo {
+  width: 270px;
+  height: 38px;
 }
 .footer {
   min-height: 350px;
