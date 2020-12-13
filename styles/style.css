@@ -9,65 +9,16 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  background-color: #f2f2f2;
-  position: relative;
-  display: flex;
-  /* parameters for the header section */
+.rotate {
+  animation: rotation 20s infinite linear;
 }
-
-.logo_place_header {
-  width: 154px;
-  height: 31px;
-  left: 64px;
-  top: 30px;
-  position: absolute;
-}
-.header__title {
-  position: relative;
-  margin: 0;
-  margin-left: 64px;
-  max-width: 730px;
-  line-height: 96px;
-  font-size: 102px;
-  font-weight: bold;
-  align-self: center;
-  z-index: 3;
-}
-.header__subtitle {
-  position: absolute;
-  margin: 0;
-  width: 388px;
-  left: 64px;
-  bottom: 30px;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  z-index: 3;
-}
-.header__link {
-  color: #2f80ed;
-  text-decoration: none;
-}
-.header__main-illustration {
-  position: absolute;
-  width: 765px;
-  height: 608px;
-  bottom: 0px;
-  right: 0px;
-  z-index: 2;
-}
-.header__square-pic {
-  width: 568px;
-  height: 568px;
-  background-color: #2f80ed;
-  right: 0px;
-  top: 64px;
-  position: absolute;
-  z-index: 1;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .description {
   display: flex;
@@ -114,6 +65,132 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
+}
+.techniques {
+  padding-top: 100px;
+  align-items: center;
+}
+.cards {
+  max-width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin: 0px auto;
+  list-style: none;
+}
+.cards__item {
+  margin-top: 60px;
+  margin-right: 100px;
+  text-align: center;
+  width: 240px;
+}
+.cards__item:nth-of-type(3n) {
+  margin-right: 0px;
+}
+.cards__image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  align-items: center;
+}
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 43px;
+  margin-bottom: 0px;
+}
+.cards__description {
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+.video {
+  padding-top: 100px;
+}
+.video__iframes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0 auto;
+}
+.video__iframe {
+  width: 515px;
+  height: 316px;
+}
+.video__iframe:last-of-type {
+  margin-left: 20px;
+}
+.oakley {
+  padding-top: 160px;
+  padding-bottom: 80px;
+  background-color: #f2f2f2;
+}
+.khan {
+  margin: 0;
+  padding-top: 105px;
+}
+.khan__container {
+  width: 80%;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  
+}
+.khan__author {
+  margin: 0;
+  padding: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.khan__title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.khan__quote {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 790px;
+}
+.khan__quote-author {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 68px;
+}
+.khan__book-container {
+  width: 620px;
+  height: 608px;
+}
+.khan__book-pic {
+  width: 620px;
+}
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
 }
 .digits {
   align-items: center;
@@ -277,6 +354,23 @@
   background-image: url('../images/kaufman-triangle.svg');
   background-size: cover;
 }
+.resources {
+  margin-top: 100px;
+}
+.resources__logo-zone {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 217px;
+  padding-top: 80px;
+  width: 1100px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
@@ -291,7 +385,7 @@
   width: 90%;
   margin: 0px auto;
   justify-content: space-between;
-  flex-grow: 0;
+  flex-grow: default;
 }
 .footer__column {
   flex-direction: column;
