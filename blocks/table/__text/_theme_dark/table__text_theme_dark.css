@@ -1,0 +1,7 @@
+.table__text_theme_dark {
+    position: relative;
+    color: white;
+    z-index: 2;
+    width: 200px;
+    display: block;
+  }

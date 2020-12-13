@@ -1,0 +1,7 @@
+.description {
+    display: flex;
+    line-height: 1.2;
+    font-size: 18px;
+    justify-content: center;
+    font-weight: normal;
+  }
