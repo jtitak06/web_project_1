@@ -2,7 +2,6 @@
 @import url(../section-subtitle/_theme_dark/section-subtitle_theme_dark.css);
 @import url(../table/_theme_dark/table_theme_dark.css);
 @import url(./__triangle/kaufman__triangle.css);
-@import url(../rotate/rotate.css);
 .kaufman {
     background-color: #1f1f1f;
     overflow: hidden;

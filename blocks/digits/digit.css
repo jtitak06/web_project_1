@@ -1,9 +1,0 @@
-@import url(../section-title/section-title.css);
-@import url(../section-subtitle/section-subtitle.css);
-@import url(../table/table.css);
-.digits {
-    align-items: center;
-    position: relative;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }

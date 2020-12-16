@@ -3,8 +3,6 @@
 @import url(./__square-pic/header__square-pic.css);
 @import url(./__subtitle/header__subtitle.css);
 @import url(./__title/header__title.css);
-@import url(../logo/_place_header/logo_place_header.css);
-@import url(../rotate/rotate.css);
 .header {
     height: 100vh;
     min-height: 600px;
@@ -12,5 +10,6 @@
     background-color: #f2f2f2;
     position: relative;
     display: flex;
+    overflow: hidden;
     /* parameters for the header section */
   }

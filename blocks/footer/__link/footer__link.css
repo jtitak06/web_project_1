@@ -3,3 +3,6 @@
     text-decoration: none;
     flex-direction: column;
   }
+.footer__link:hover {
+  opacity: 0.5;
+}
